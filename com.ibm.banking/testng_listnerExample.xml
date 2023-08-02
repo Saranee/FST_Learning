@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+ 
+ 
+ <listeners>
+ 
+<!--  <listener class-name="retryExample.TransformExample"></listener> -->
+ 
+ <listener class-name="testNGListnersExample.ListnersExample"></listener>
+ 
+ </listeners>
+ 
+ 
+ 
+ 
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="retryExample.AmazonAppTest"/>
+      
+     <!--  <class name="logExample.NOPCommApp"/> -->
+     <!--  <class name="retryExample.AmazonAppTest"/>
+      <class name="retryExample.AmazonAppTest"/>
+      <class name="retryExample.AmazonAppTest"/> -->
+      
+    </classes>
+  </test> 
+</suite> 

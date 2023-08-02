@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-24T07:47:05Z" name="Suite" finished-at="2023-07-24T07:47:24Z" duration-ms="19199">
+    <groups>
+    </groups>
+    <test started-at="2023-07-24T07:47:05Z" name="Test" finished-at="2023-07-24T07:47:24Z" duration-ms="19199">
+      <class name="extentReportExample.NOPCommApp">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:extentReportExample.NOPCommApp@1838ccb8]" started-at="2023-07-24T13:17:05Z" name="launchApp" finished-at="2023-07-24T13:17:13Z" duration-ms="8251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="verifyLogin()[pri:0, instance:extentReportExample.NOPCommApp@1838ccb8]" started-at="2023-07-24T13:17:13Z" name="verifyLogin" finished-at="2023-07-24T13:17:16Z" duration-ms="3458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method signature="verifyApplicationTitle()[pri:0, instance:extentReportExample.NOPCommApp@1838ccb8]" started-at="2023-07-24T13:17:16Z" name="verifyApplicationTitle" finished-at="2023-07-24T13:17:16Z" duration-ms="11" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Your store. Login!!] but found [Your store. Login]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Your store. Login!!] but found [Your store. Login]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at extentReportExample.NOPCommApp.verifyApplicationTitle(NOPCommApp.java:55)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyApplicationTitle -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:extentReportExample.NOPCommApp@1838ccb8]" started-at="2023-07-24T13:17:17Z" name="closeApp" finished-at="2023-07-24T13:17:24Z" duration-ms="7130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- extentReportExample.NOPCommApp -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
